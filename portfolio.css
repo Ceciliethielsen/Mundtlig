@@ -1,0 +1,145 @@
+/*Herunder er mine fonts linket til*/
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
+/*Her bruger jeg min css til at style hoveddelen af min html*/
+html body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    Margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/*Mit header-billede gøres responsivt ved at bruge width og height*/
+.header-billede{
+    width: 100%;
+    height: auto;
+}
+
+/*Herunder styler jeg min navigationsbar*/
+.topnav{background-color: #dea5a4;
+overflow: hidden;
+}
+
+.topnav a {
+    font-family: 'Arima Madurai';
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+}
+    
+
+/*Dette gør, at den/knappen skifter farve, når markøren rammer den i navigationsbaren*/
+.topnav a:hover{
+    background-color: #ffe4e1;
+    color: black;
+}
+
+/*Dette gør, at den aktive side har en anden farve end resten af navigationsbaren*/
+.topnav a.active{
+    background-color: #ffe4e1;
+    color: black;
+}
+/*linkedin er stylet til venstre i navigationsbaren og ved brug af padding er den skubbet lidt ind på siden, da det så bedre ud*/
+#linkedin{
+float: left;
+padding-left: 10px;
+}
+/*Min overskrift er fikset her. Jeg har fundet en font, som er hentet ind i min css (via link) og den bruger jeg til alle mine overskrifter
+Derudover er størrelsen på teksten ordnet. tykkelsen på teksten er også ændret på og jeg ville gerne have den stående i midten, som jeg har gjort ved at bruge tekst align med center*/
+.overskrift{
+    font-family: 'Arima Madurai';
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+/*først styles den yderste "boks", der er rundt om mine emner med margins alignment osv. for at sætte det hele overordnet ordenligt
+Derefter bruges inline-block for at sikre, at emnerne er ved siden af hinanden og de rigtige størrelser bliver også stylet. Til sidst ordnes teksten*/
+.portfolio{
+    border: 1px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    }
+    .emne{
+    display: inline-block;
+    border: 1px;
+    padding: 30px;
+    }
+    .subjects{
+    height: 200px;
+    width: 200px;  
+    }
+    .tekstport{
+        font-family: 'Arima Madurai';
+        font-weight: 600;
+        text-align: center; 
+    }
+/*herunder er min footer/bundlinje stylet og flexet, så den står på linje i hver sin side
+derudover marginerne stylet under, så de ikke blev mast helt ud til kanten af siden*/
+.bund{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        font-family: 'Arima Madurai';
+        background-color: #dea5a4;
+        color: black;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .domaincopyright{
+        margin-left: 10px;
+    }
+    .contact{
+        margin-right: 10px;
+    }   
+/*Dette er responsiv til tabletstørrelse*/
+@media (max-width: 768px){
+
+    .topnav a{
+        font-size: 18px;
+        padding: 11px 13px;
+    }
+    .overskrift{
+        font-size: 25px;
+    }
+    .tekstport{
+        font-size: 18px;
+    }
+    .subjects{
+        height: 160px;
+        width: 160px;
+    }
+    .bund{
+         font-size: 10px;}
+}
+/*Dette er responsiv til mobilstørrelse*/
+@media (max-width: 480px){
+
+    .topnav a{
+        font-size: 12px;
+        padding: 6px 8px;    
+    }
+    .overskrift{
+        font-size: 18px;
+        margin: 10px;
+    }
+    .tekstport{
+            font-size: 15px;
+            margin-left: 5px;    
+    }
+    .subjects{
+        height: 140px;
+        width: 140px;
+    }
+    .bund{
+        font-size: 9px;
+        flex-direction: column;
+        text-align: center;
+    }
+}

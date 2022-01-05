@@ -1,0 +1,223 @@
+/*Herunder er mine fonts linket til*/
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
+/*Her bruger jeg min css til at style hoveddelen af min html*/
+html body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    Margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/*Mit header-billede gøres responsivt ved at bruge width og height*/
+.header-billede{
+    width: 100%;
+    height: auto;
+}
+
+/*Herunder styler jeg min navigationsbar*/
+.topnav{background-color: #dea5a4;
+overflow: hidden;
+}
+
+.topnav a {
+    font-family: 'Arima Madurai';
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+}
+/*Dette gør, at den/knappen skifter farve, når markøren rammer den i navigationsbaren*/
+.topnav a:hover{
+    background-color: #ffe4e1;
+    color: black;
+}
+
+/*Dette gør, at den aktive side har en anden farve end resten af navigationsbaren*/
+.topnav a.active{
+    background-color: #ffe4e1;
+    color: black;
+}
+/*linkedin er stylet til venstre i navigationsbaren og ved brug af padding er den skubbet lidt ind på siden, da det så bedre ud*/
+#linkedin{
+float: left;
+padding-left: 10px;
+}
+/*Min overskrift er fikset her. Jeg har fundet en font, som er hentet ind i min css (via link) og den bruger jeg til alle mine overskrifter
+Derudover er størrelsen på teksten ordnet. tykkelsen på teksten er også ændret på og jeg ville gerne have den stående venstre side, og har derfor brugt margin til denne ændring. Margin-left gav mig ikke helt det look jeg ville have i denne sammenhæng*/
+.overskrift{
+    font-family: 'Arima Madurai';
+    color: black;
+    font-size: 40px;
+    margin: 50px;
+    font-weight: 600;
+}
+
+/*Content-container indeholder styling til min tekst og mit billede. Det er her, at jeg har brugt flex og space-between for at kunne have det stående ordenligt ved siden af hinanden*/
+/*Her har jeg også stylet fonten på min tekst, hvor arial er valgt, af læsevenlige grunde. Det samme med størrelse og tykkelse på teksten. Derudover er der lidt padding omkring containeren for at den står det rigtige sted på siden*/
+.content-container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+/*herunder er mit billede stylet. margin-top er brugt i minus for at trække billedet lidt længere op på siden*/
+    .imgportrait{
+        margin-top: -100px;
+     
+    }
+/*Her er størrelserne på billedet stylet*/
+    .img1{
+        width: 500px;
+        height: 500px;
+    }
+.tekst{
+    margin-left: 50px;
+}
+.kompetencer{
+    font-family: 'Arima Madurai';
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+.programmer{
+    text-align: center;
+}
+/*inline-block er her valgt, da det virkede som den nemmeste løsning ift. at få elementerne på siden af hinanden*/
+.adobe{
+    display: inline-block;
+    padding: 30px;
+}
+.adobe01{
+    width: 60px;
+    height: 60px;
+}
+.adobe1{
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+}
+/*herunder er min footer/bundlinje stylet og flexet, så den står på linje i hver sin side
+derudover marginerne stylet under, så de ikke blev mast helt ud til kanten af siden*/
+.bund{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: 'Arima Madurai';
+    background-color: #dea5a4;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.domaincopyright{
+    margin-left: 10px;
+}
+.contact{
+    margin-right: 10px;
+}   
+
+
+/*Dette er responsiv til tabletstørrelse*/
+@media (max-width: 768px){
+
+    .topnav a{
+        font-size: 18px;
+        padding: 11px 13px;
+    }
+    
+    .overskrift{
+        font-size: 25px;
+    }
+    .content-container{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .tekst{
+        font-size: 18px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .imgportrait{
+        margin-top: 50px;
+        align-self: center; 
+    }
+        .img1{
+            width: 260px;
+            height: 260px;    
+        }
+    .kompetencer{
+        font-size: 20px;
+    }
+    .adobe01{
+        width: 40px;
+        height: 40px;
+    }
+    .adobe1{
+        width: 40px;
+        height: 40px;
+        margin-left: 30px;
+    }
+    .bund{
+        font-size: 10px;
+    }
+}
+/*Dette er responsiv til mobilstørrelse*/
+@media (max-width: 480px){
+
+    .topnav a{
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    .overskrift{
+        font-size: 18px;
+        margin: 10px;
+    }
+    .content-container{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .tekst{
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .imgportrait{
+        margin-top: 10px;
+        border-radius: 0;
+        align-self: center;
+    }
+        .img1{
+            width: 170px;
+            height: 170px;    
+        }
+    .kompetencer{
+        font-size: 16px;
+    }
+    .adobe{
+        padding: 5px;
+    }
+    .adobe01{
+        width: 30px;
+        height: 30px;
+    }
+    .adobe1{
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+    }
+    .bund{
+        font-size: 9px;
+        flex-direction: column;
+        text-align: center;
+    }
+}

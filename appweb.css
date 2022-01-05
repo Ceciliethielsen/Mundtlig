@@ -1,0 +1,190 @@
+/*Herunder er mine fonts linket til*/
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
+/*Her bruger jeg min css til at style hoveddelen af min html*/
+html body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    Margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/*Mit header-billede gøres responsivt ved at bruge width og height*/
+.header-billede{
+    width: 100%;
+    height: auto;
+}
+
+/*Herunder styler jeg min navigationsbar*/
+.topnav{background-color: #dea5a4;
+overflow: hidden;}
+
+.topnav a {
+    font-family: 'Arima Madurai';
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+}
+    
+
+/*Dette gør, at den/knappen skifter farve, når markøren rammer den i navigationsbaren*/
+.topnav a:hover{
+    background-color: #ffe4e1;
+    color: black;
+}
+
+/* Dette gør, at den aktive side har en anden farve end resten af navigationsbaren*/
+.topnav a.active{
+    background-color: #ffe4e1;
+    color: black;
+}
+/*linkedin er stylet til venstre i navigationsbaren og ved brug af padding er den skubbet lidt ind på siden, da det så bedre ud*/
+#linkedin{
+float: left;
+padding-left: 10px;
+
+}
+/*Min overskrift er fikset her. Jeg har fundet en font, som er hentet ind i min css (via link) og den bruger jeg til alle mine overskrifter
+Derudover er størrelsen på teksten ordnet. tykkelsen på teksten er også ændret på og jeg ville gerne have den stående i midten, som jeg har gjort ved at bruge tekst align med center*/
+.overskrift{
+    font-family: 'Arima Madurai';
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    }
+/*teksten er stylet i Aral for at det er læsevenligt. Derudover er den centreret, og yderligere centreret ved brug af margener*/
+    .tekst{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-left: 100px;
+        margin-right: 100px;    
+    }
+/*note  ligesom i portfolio*/
+.galleri{
+    border: 1px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+    .emner{
+        display: inline-block;
+        border: 1px;
+        padding: 20px;
+        vertical-align: middle;
+    }
+    .emne1{
+        display: inline-block;
+        height: 400px;
+        width: 700px;
+    }
+    .emne01{
+        display: inline-block;
+        height: 400px;
+        width: 500px;
+    }
+    .emne2{
+    height: 600px;
+    width: 278px;
+    display: inline-block;
+    }
+/*note ligesom i index*/
+.bund{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: 'Arima Madurai';
+    background-color: #dea5a4;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+    .domaincopyright{
+        margin-left: 10px;
+    }
+    .contact{
+        margin-right: 10px;
+    }
+/*For at kunne få billederne i galleriet til at være responsivt har jeg lavet en @media til laptop 1024px, selvom det ikke er noget, jeg normalt ville lave*/
+@media (max-width: 1024px){
+    .emne1{
+        height: 300px;
+        width: 500px;
+    }
+    .emne01{
+        height: 300px;
+        width: 400px;
+    }
+    .emne2{
+        height: 620px;
+        width: 275px;
+    } 
+}
+/*Dette er responsiv til tabletstørrelse*/
+@media (max-width: 768px){
+    .topnav a{
+        font-size: 18px;
+        padding: 11px 13px;
+    }
+    .overskrift{
+        font-size: 20px;
+    }
+    .tekst{
+        font-size: 11px;
+    }
+    .emne1{
+        height: 150px;
+        width: 300px;
+    }
+    .emne01{
+        height: 150px;
+        width: 200px;
+    }
+    .emne2{
+        height: 530px;
+        width: 210px;
+    } 
+    .bund{
+         font-size: 10px;
+    }
+}
+/*Dette er responsiv til mobilstørrelse*/
+@media (max-width: 480px){
+    .topnav a{
+        font-size: 12px;
+        padding: 6px 8px;   
+    }
+    .overskrift{
+        font-size: 11px;
+        margin: 10px;
+    }
+    .tekst{
+        font-size: 7px;
+        margin-left: 30px;
+        margin-right: 30px;    
+    }
+    .emne1{
+        height: 100px;
+        width: 200px;
+    }
+    .emne01{
+        height: 150px;
+        width: 200px;
+    }
+    .emne2{
+        height: 460px;
+        width: 200px;
+    } 
+    .bund{
+        font-size: 9px;
+        flex-direction: column;
+        text-align: center;
+    }
+}   

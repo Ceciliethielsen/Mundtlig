@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
+        </style>
+        <!--i min head har jeg den grundlæggende opbygning af min HTML, som blandt andet link til css og titel i sidehovedet-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cecilie Thielsen</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!--i body'en kodes alt det, som jeg ønsker skal være "synligt" på siden. Det er mit indhold-->
+    <header>
+        <!--Headeren vil indeholde min navigationsbar(nav) og mit logo, som er sat i et header-billede. For at gøre min navigationsbar funktionel, er elementerne i navigationsbaren sat ind med et link, så de leder til den rigtige side-->
+       <!--Nederst i min navigationsbar-kode har jeg sat et link ind til min LinkedIn under et ikon og lagt en div rundt om, for at kunne style den på siden-->
+            
+            <div class="header-container">
+                <img src="billeder/Header-billede.jpg" alt="header-billede" class="header-billede">
+            <div class="topnav">
+                    <a href="kontakt.html">KONTAKT MIG</a>
+                    <a href="portfolio.html" class="active">PORTFOLIO</a>
+                    <a href="index.html">HJEM</a>
+                    <div id="linkedin">
+                    <a href="https://www.linkedin.com/in/cecilie-thielsen-b0747a220/" target="blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+            </div>
+            </div> 
+    </header> 
+        <main>
+            <!--Min overskrift er sat i en class for at kunne style på den i css, præcis som jeg ønsker-->
+            <h1 class=overskrift>Velkommen til min online portfolio</h1>
+            <!--herunder har jeg igen brugt flere classes for at kunne style og aligne de forskellige emner, som jeg har lyst til.
+            Derudover er alle billederne linket til de næste sider, så billederne fungerer som en slags "knapper" til at komme til næste side-->
+            <div class="portfolio">
+                <div class="emne">
+                    <a href="appweb.html">
+                        <img class="subjects" src="billeder/appweb.jpg" alt="appweb">
+                    </a>
+                        <div class="tekstport">App- og Webdesign</div>
+                    </div>
+                <div class="emne">
+                    <a href="graphic.html">
+                        <img class="subjects" src="billeder/graphic.jpg" alt="graphic" >
+                    </a>
+                        <div class="tekstport">Grafiske illustrationer</div>
+                </div>
+                <div class="emne">
+                    <a href="photovideo.html">
+                        <img class="subjects" src="billeder/bb.jpg" alt="photovideo" >
+                    </a>
+                        <div class="tekstport">Foto og Video</div>
+                </div>
+            </div>
+
+        </main>
+        <!--br bliver brugt på flere af siderne for at kunne lave mere mellemrum/linjeskift på siden, når det ønskes-->
+        <br>
+        <br>
+        <footer>
+            <!--i footeren er bundlinjen på siden og ting som copyright og kontaktoplysninger. Denne følger med på alle siderne-->
+            <div class="bund">
+                <div class="domaincopyright">&copy; Cecilie Thielsen 2021</div>
+                <div class="contact">tlf +45 29 89 11 64 - cecilie.mft@hotmail.com</div>
+            </div>
+        </footer>
+    </body>
+</html>

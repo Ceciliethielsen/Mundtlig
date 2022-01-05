@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
+        </style>
+            <!--i min head har jeg den grundlæggende opbygning af min HTML, som blandt andet link til css og titel i sidehovedet-->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cecilie Thielsen</title>
+            <link rel="stylesheet" href="appweb.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+                integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
+    <body>
+            <!--i body'en kodes alt det, som jeg ønsker skal være "synligt" på siden. Det er mit indhold-->
+        <header>
+            <!--Headeren vil indeholde min navigationsbar(nav) og mit logo, som er sat i et header-billede. For at gøre min navigationsbar funktionel, er elementerne i navigationsbaren sat ind med et link, så de leder til den rigtige side-->
+       <!--Nederst i min navigationsbar-kode har jeg sat et link ind til min LinkedIn under et ikon og lagt en div rundt om, for at kunne style den på siden-->
+                
+                <div class="header-container">
+                    <img src="billeder/Header-billede.jpg" alt="header-billede" class="header-billede">
+                <div class="topnav">
+                        <a href="kontakt.html">KONTAKT MIG</a>
+                        <a href="portfolio.html" class="active">PORTFOLIO</a>
+                        <a href="index.html">HJEM</a>
+                        <div id="linkedin">
+                        <a href="https://www.linkedin.com/in/cecilie-thielsen-b0747a220/" target="blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                </div>
+                </div> 
+        </header>
+        <!--note som i portfolio--> 
+        <main>
+            <h1 class="overskrift">
+                App- og Webdesign
+            </h1>
+            <div class="tekst">
+                I et projekt på uddannelsen har jeg, sammen med min gruppe, udarbejdet en prototype til middelfart.dk
+            </div>
+            <div class="galleri">
+                <div class="emner">
+                    <img class= "emne1" src="billeder/middelfart.jpg" alt="middelfart">
+                </div>
+                <div class="emner">
+                    <img class= "emne01" src="billeder/borger.jpg" alt="borger" >
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="tekst">Efter personligt at have oplevet og hørt ansatte som pårørte beklage sig over manglende kontakt og opdateringer på de ældre, gik jeg selv igang med et lille projekt.
+                Jeg ønskede at gøre det nemmere for plejepersonalet på plejehjem, at opdatere de pårørende. Derfor udviklede jeg denne prototype med fokus på at inddrage de pårørende i hverdagen på plejehjemmet. 
+            </div>
+            <div class="galleri">
+                <div class="emner">
+                    <img class="emne2" src="billeder/plejehjem1.jpg" alt="plejehjem1">
+                </div>
+                <div class="emner">
+                    <img class="emne2" src="billeder/plejehjem2.jpg" alt="plejehjem2">
+                </div>
+                <div class="emner">
+                    <img class="emne2" src="billeder/plejehjem3.jpg" alt="plejehjem3">
+                </div>
+            </div>
+        </main>
+        <!--note som i index-->
+        <footer>
+            <div class="bund">
+                <div class="domaincopyright">&copy; Cecilie Thielsen 2021</div>
+                <div class="contact">tlf +45 29 89 11 64 - cecilie.mft@hotmail.com</div>
+            </div>
+        </footer>
+    </body>
+    </html>
+   
